@@ -1,6 +1,20 @@
 <html>
   <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+	<script>
+	  // check for https and redirect if necessary
+	  if (window.location.protocol != "https:" && 
+	  	window.location.hostname != "localhost" && 
+		// is not a file system path
+		window.location.hostname.indexOf(".") > 0) {
+			window.location.replace(
+				"https://" + 
+				window.location.hostname + 
+				window.location.pathname + 
+				window.location.search
+			);
+		}
+	</script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-127257-7"></script>
 	<script>
 	  window.dataLayer = window.dataLayer || [];
@@ -39,28 +53,28 @@
 			<a href="https://www.linkedin.com/in/richarddiamond/">
 			<img src="linkedin.png">
 			<h2>LinkedIn</h2>
-			<p>Work history, projects, connect with me</p>
+			<p>connect</p>
 			</a>
 		  </li>
 		  <li>
 			<a href="https://github.com/bitdozer">
 			<img src="github.png">
 			<h2>Github</h2>
-			<p>Code, bad and/or borrowed</p>
+			<p>code</p>
 			</a>
 		  </li>
-		  <li>
+		  <!-- <li>
 			<a href="https://twitter.com/bitdozer">
 			<img src="twitter.png">
 			<h2>Twitter</h2>
 			<p>Thoughts, deep or original, never both</p>
 			</a>
-		  </li>
+		  </li> -->
 		  <li>
-			<a href="mailto:">
+			<a href="mailto:?subject=rmd.one contact link">
 			<img src="email.png">
-			<h2>Email rmd at this domain</h2>
-			<p>Do you put <em>your</em> email address on the internet?</p>
+			<h2>rmd @ this domain</h2>
+			<p>contact</p>
 			</a>
 		  </li>
 		</ul>
